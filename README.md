@@ -22,11 +22,36 @@ pip install -e env/python/
 
 ## Training
 
+To train a model from scratch, run:
+```bash
+python src/training/main
+```
+Logs and checkpoints are saved under `data/training/models`.
+
 ## Evaluation
 
-To infer the provided model, run:
+To run inference using the provided model, run:
 ```bash
 python src/evaluation/infer.py
 python src/evaluation/analysis.py
 ```
-You 
+The results can be found in `data/evaluation`.
+
+## Citation
+If you use this code in your research, please cite the following paper:
+
+```bibtex
+@inproceedings{tsanda_data_driven_mmr_localization_2026,
+  author={Tsanda, Artyom and Scheffler, Konrad and Reiss, Sarah and Faltinath, Jonas and Bach, Janik and Thieben, Florian and Stagge, Pascal and Mohn, Fabian and Knopp, Tobias},
+  booktitle={2026 IEEE SENSORS},
+  title={Data-Driven Localization of Magneto-Mechanical Resonators from Time Signals},
+  year={2026},
+  volume={},
+  number={},
+  pages={1-4},
+}
+
+```
+
+## License
+The code is licensed under the MIT License; see the LICENSE file.

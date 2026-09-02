@@ -1,0 +1,31 @@
+data:
+  folder: data/raw/training
+  modes:
+    train:
+        batch_size: 64
+        num_workers: 4
+    val:
+        batch_size: 64
+        num_workers: 4
+  device: cuda:0
+training:
+  lr: 1e-4
+  validate_every_iteration: 1000
+  epochs: 100
+  loss: l2
+  ema:
+    enabled: true
+    update_every: 5
+    momentum: 0.002
+    momentum_warmup: 0.2
+    warmup_iters: 100
+  grad_clipping_norm: 1.0
+  step_lr_scheduler:
+    milestones: [32000, 64000, 96000, 128000, 160000]
+    gamma: 0.5
+    enabled: true
+  resume_from: null  # or path to checkpoint
+device: cuda:0
+base_models_folder: data/training/models
+seed: 42
+debug: false

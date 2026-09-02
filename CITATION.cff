@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: If you use this software, please cite both the article from preferred-citation and the software itself.
+authors:
+  - family-names: Tsanda
+    given-names: Artyom
+  - family-names: Scheffler
+    given-names: Konrad
+  - family-names: Reiss
+    given-names: Sarah
+  - family-names: Faltinath
+    given-names: Jonas
+  - family-names: Bach
+    given-names: Janik
+  - family-names: Thieben
+    given-names: Florian
+  - family-names: Stagge
+    given-names: Pascal
+  - family-names: Mohn
+    given-names: Fabian
+  - family-names: Knopp
+    given-names: Tobias
+title: Data-Driven Localization of Magneto-Mechanical Resonators from Time Signals
+version: 1.0.0
+date-released: '2026-09-02'
+preferred-citation:
+  authors:
+    - family-names: Tsanda
+      given-names: Artyom
+    - family-names: Scheffler
+      given-names: Konrad
+    - family-names: Reiss
+      given-names: Sarah
+    - family-names: Faltinath
+      given-names: Jonas
+    - family-names: Bach
+      given-names: Janik
+    - family-names: Thieben
+      given-names: Florian
+    - family-names: Stagge
+      given-names: Pascal
+    - family-names: Mohn
+      given-names: Fabian
+    - family-names: Knopp
+      given-names: Tobias
+  title: Data-Driven Localization of Magneto-Mechanical Resonators from Time Signals
+  type: conference-paper
+  pages: 1-4
+  year: '2026'
+  collection-title: 2026 IEEE SENSORS
+  conference: {}
+  publisher: {}
