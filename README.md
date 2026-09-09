@@ -20,11 +20,45 @@ conda activate mmr-learned-localization-from-signals
 pip install -e env/python/
 ```
 
+Download the data from the [here](https://doi.org/10.15480/882.18147), place it in the `data/raw` directory, and unflatten thefolder structure by running:
+```bash
+cd data/raw
+./flatten.sh decode .
+```
+You should end up with the following structure inside `data/raw`:
+```
+.
+├── experiment
+│   ├── data.npy
+│   └── gt.csv
+├── flatten.sh
+├── model
+│   └── checkpoint.pt
+├── README.md
+└── training
+    ├── noise.npy
+    ├── test_chunk1.npy
+    ├── test_meta.csv
+    ├── train_chunk01.npy
+    ├── train_chunk02.npy
+    ├── train_chunk03.npy
+    ├── train_chunk04.npy
+    ├── train_chunk05.npy
+    ├── train_chunk06.npy
+    ├── train_chunk07.npy
+    ├── train_chunk08.npy
+    ├── train_chunk09.npy
+    ├── train_chunk10.npy
+    ├── train_meta.csv
+    ├── val_chunk1.npy
+    └── val_meta.csv
+```
+
 ## Training
 
 To train a model from scratch, run:
 ```bash
-python src/training/main
+python src/training/main.py
 ```
 Logs and checkpoints are saved under `data/training/models`.
 
